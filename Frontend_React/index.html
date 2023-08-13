@@ -9,6 +9,8 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx">
+      window.process = {browser: true, env: {ENVIRONMENT: 'BROWSER'} }
+    </script>
   </body>
 </html>
