@@ -28,7 +28,9 @@ const Navbar = () => {
       
   }, [])
   
-  
+  const handleLinkClick = () => {
+    setToggle(false);
+  }
   return (
     <div>
       <nav className='app__navbar'>
@@ -39,7 +41,7 @@ const Navbar = () => {
         {/* navigation content */}
         <ul className='app__navbar-links'>
           {/* create an array of navigation content or elements */}
-          {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+          {['home', 'about', 'project', 'testimonial', 'contact'].map((item) => (
             <li className='app__flex p-text' key={`link-${item}`}>
               <div />
               <a href={`#${item}`}>{item}</a>
@@ -57,9 +59,9 @@ const Navbar = () => {
             >
               <HiX onClick={() => setToggle(false)} />
                 <ul>
-                  {['home', 'about', 'skills', 'work', 'contact'].map((item) => (
+                  {['home', 'about', 'project', 'testimonial' , 'contact'].map((item) => (
                     <li key={item}>
-                      <a href={`#${item}`} onClick={() => setToggle(true)}>{item}</a>
+                      <a href={`#${item}`} onClick={handleLinkClick}>{item}</a>
                     </li>
                   ))}
                 </ul>

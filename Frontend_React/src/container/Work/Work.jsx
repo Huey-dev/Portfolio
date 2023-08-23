@@ -40,9 +40,7 @@ const Work = () => {
   return (
     <>
       <h2 className='head-text'>
-        My creative
-        <span> Portfolio </span>
-         Section
+        Project
       </h2>
       <div className='app__work-filter'>
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
@@ -107,4 +105,4 @@ const Work = () => {
   )
 }
 
-export default AppWrap (Work, 'work')
+export default AppWrap (Work, 'project')
