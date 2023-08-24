@@ -24,12 +24,14 @@ useEffect(() => {
 }, [])
 
 const test = testimonials[currentIndex]
+
   return (
     <>
+    <h2 className='head-text'>Testimonials</h2>
       {testimonials.length && (
         <> 
           <div className="app__testimonial-item app__flex">
-            <img src={urlFor(test.imgUrl)} alt="testimonial" />
+            <img src={urlFor(test.imgurl)} alt="testimonial" />
             <div className="app__testimonial-content">
               <p className="p-text">{test.feedback}</p>
               <div>
@@ -42,7 +44,7 @@ const test = testimonials[currentIndex]
           <div className="app__testimonial-btns app__flex">
             <div className="app__flex" onClick={() =>
              handleClick(currentIndex === 0 
-              ? testimonials.lengthcurrentIndex - 1 
+              ? testimonials.length - 1  
                 : currentIndex - 1)}>
                   <HiChevronLeft/>
             </div>
