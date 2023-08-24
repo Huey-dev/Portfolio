@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* navigation content */}
         <ul className='app__navbar-links'>
           {/* create an array of navigation content or elements */}
-          {['home', 'about', 'project', 'testimonial', 'contact'].map((item) => (
+          {['home', 'about', 'project', 'testimonials', 'contact'].map((item) => (
             <li className='app__flex p-text' key={`link-${item}`}>
               <div />
               <a href={`#${item}`}>{item}</a>
