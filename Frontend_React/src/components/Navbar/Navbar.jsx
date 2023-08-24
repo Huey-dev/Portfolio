@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import './Navbar.scss'
 import {images} from '../../constants'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
+import { AiOutlineDownload } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
@@ -36,7 +37,7 @@ const Navbar = () => {
       <nav className='app__navbar'>
         {/* image div */}
         <div className='app__navbar-logo'>
-          <img src={images.myLogo} alt="" />
+          <AiOutlineDownload/>
         </div>
         {/* navigation content */}
         <ul className='app__navbar-links'>

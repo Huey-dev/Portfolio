@@ -18,9 +18,9 @@
     justify-content: flex-start;
     align-items: center;
 
-    img {
+    svg {
         width: 70px;
-        height: 30px;
+        height: 40px;
 
         @media screen and (min-width:2000px) {
             width: 300px;
