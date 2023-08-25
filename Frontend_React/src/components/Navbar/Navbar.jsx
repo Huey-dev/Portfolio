@@ -32,13 +32,22 @@ const Navbar = () => {
   const handleLinkClick = () => {
     setToggle(false);
   }
+
+  const handleDownloadClick = () => {
+    // link to resume file 
+    const downloadLink = document.createElement('a');
+    downloadLink.href = '/resume.docx'; 
+    downloadLink.download = 'resume.docx'; 
+    downloadLink.click();
+  };
+
   return (
     <div>
       <nav className='app__navbar'>
-        {/* image div */}
-        <div className='app__navbar-logo'>
-          <AiOutlineDownload/>
-        </div>
+        {/* resume button*/}
+        <button className='app__navbar-download' onClick={handleDownloadClick}>
+          Download CV<AiOutlineDownload/>
+        </button>
         {/* navigation content */}
         <ul className='app__navbar-links'>
           {/* create an array of navigation content or elements */}
