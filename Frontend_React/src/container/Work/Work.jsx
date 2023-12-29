@@ -18,7 +18,7 @@ const Work = () => {
         // When the data is fetched successfully, update both 'works' and 'FilterWork' states.
         // Update 'works' state with fetched data
         setWorks(data)
-         // Update 'FilterWork' state with fetched data
+         // Update 'FilterWork ' state with fetched data
         setFilterWork(data)
       })
   }, [])
