@@ -42,8 +42,8 @@ const Work = () => {
       <h2 className='head-text'>
         Projects
       </h2>
-      <div className='app__work-filter'>
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+      <div className='app__work-filter '>
+        {['React JS / Context API /  OAUTH', 'API / Redux / React / SCSS', 'API / Tailwind / React', 'SCSS / React JS', 'React JS / Sanity cms', 'All'].map((item, index) => (
           <div
             key={index}
             className={`app__work-filter-item app__flex ${activeFilter === item ? 'item-active': '' }`}
