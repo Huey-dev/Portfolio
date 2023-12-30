@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: 'Frontend_React/src/main.jsx', // Specify the path to your entry JavaScript file
+      input: 'Frontend_React/src/main.js', // Specify the path to your entry JavaScript file
     },
   },
 })
