@@ -4,16 +4,7 @@ import {AppWrap} from '../../wrapper'
 import { images } from '../../constants'
 import './Header.scss'
 
-const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0, 1],
-    transition: {
-      duration: 1,
-      ease:'easeInOut'
-    }
-  }
-}
+
 
 const Header = () => {
   return (
@@ -44,7 +35,7 @@ const Header = () => {
         transition={{ duration: 1.7, delayChildren: 0.9 }}
         className='app__header-img'
       >
-        <img src={images.profilleImg} alt="profile_bg" />
+        <p className='about'>Delivering <span>proven expertise</span> and innovation <br /> for your next project. </p>
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: 'easeInOut' }}
@@ -52,20 +43,6 @@ const Header = () => {
           alt='profile_circle'
           className='overlay_circle'
         />
-      </motion.div>
-
-      <motion.div
-        variants={scaleVariants}
-        whileInView={ scaleVariants.whileInView }
-        className='app__header-circles'
-      >
-
-        {[images.sass, images.javascript, images.react].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
-          </div>
-        ))}
-
       </motion.div>
       
     </div>

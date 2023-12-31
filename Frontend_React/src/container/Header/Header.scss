@@ -80,6 +80,17 @@
     }
 }
 
+.about{
+    margin-top: 2rem;
+    z-index: 999;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 6rem;
+span{
+    color: blue;
+}
+}
+
 .app__header-circles {
     flex: 0.75;
     display: flex;
