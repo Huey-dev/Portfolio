@@ -29,7 +29,7 @@ const Navbar = () => {
 
   const handleDownloadClick = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = "/resume.docx";
+    downloadLink.href = "/matthew.docx";
     downloadLink.download = "resume.docx";
     downloadLink.click();
   };
